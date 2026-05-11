@@ -16,7 +16,7 @@ const FilePage = () => {
     const decodedFilename = decodeURIComponent(filename);
     
     // Загружаем содержимое файла
-    fetch(`/files/${decodedFilename}`)
+    fetch(`${process.env.PUBLIC_URL}/files/${decodedFilename}`)
       .then(response => {
         if (!response.ok) {
           throw new Error(`Файл не найден: ${decodedFilename}`);

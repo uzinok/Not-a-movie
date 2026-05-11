@@ -7,7 +7,7 @@ const Home = () => {
 
   useEffect(() => {
     // Получаем список текстовых файлов из списка
-    fetch('/filelist.json')
+    fetch(`${process.env.PUBLIC_URL}/filelist.json`)
       .then(response => response.json())
       .then(fileList => {
         setFiles(fileList);
