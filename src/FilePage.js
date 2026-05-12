@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import ReactMarkdown from 'react-markdown';
 import { marked } from 'marked';
-import { ContentContainer, Heading, ErrorContainer, BackLink, PreformattedText, StyledTable, TableHeader, TableCell, TableRow } from './styles/FilePageStyles';
+import { ContentContainer, Heading, ErrorContainer, BackLink, PreformattedText } from './styles/FilePageStyles';
 
 const FilePage = () => {
   const { filename } = useParams();
